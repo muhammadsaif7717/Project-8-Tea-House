@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dim">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/b522fef9ba.js" crossorigin="anonymous"></script>
+    <!-- fav-icon -->
+    <link rel="shortcut icon" href="images/icons8-tea-64.png" type="image/x-icon">
+    <!-- tailwind & daisy-ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind custom styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        org: '#E76F51',
+                        red: '#F00',
+                        org2: '#FF8938',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- custom styles -->
+    <style>
+        .manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hellow World</h1>
+    <!-- header -->
+    <header>
+            <div class="p-20 lg:h-[500px] flex items-center justify-around mx-auto hero-content flex-col lg:flex-row-reverse">
+                <!-- image -->
+             <div class="relative">
+                <img src="images/banner.png" class="max-w-xl rounded-lg shadow-2xl" />
+                <div class="flex items-center space-x-3 w-[270px] h-[100px] bg-white justify-center rounded-2xl absolute bottom-5 left-[125px]">
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="size-10 mask mask-star-2 bg-orange-400" checked />
+                      </div>
+                      <div>
+                        <h1 class="text-3xl text-black">5.00</h1>
+                        <p class="text-xl text-gray-500">Trust Pilot Ratings</p>
+                      </div>
+                </div>
+             </div>
+             <!-- texts -->
+              <div>
+                <h1 class="text-5xl font-bold">It's good <br> 
+                    tea time at The <br> Tea House</h1>
+                <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="btn bg-gradient-to-r from-org2 to-red">Explore More <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+              </div>
+
+            </div>
+    </header>
+    <!-- main -->
+    <main></main>
+    <!-- footer -->
+    <footer></footer>
 </body>
+
 </html>
